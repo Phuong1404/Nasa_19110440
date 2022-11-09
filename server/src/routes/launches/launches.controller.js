@@ -11,7 +11,6 @@ function httpAborthLaunch(req, res) {
         })
     }
     const aborted = abortedLaunchById(launchId)
-    console.log(aborted)
     return res.status(200).json(aborted)
 
 }
